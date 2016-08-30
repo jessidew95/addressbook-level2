@@ -12,23 +12,23 @@ public class Block {
 	private boolean isPrivate;
 	
     /**
-     * Validates given phone number.
+     * Validates given block number.
      *
-     * @throws IllegalValueException if given phone string is invalid.
+     * @throws IllegalValueException if given block string is invalid.
      */
     public Block(String block, boolean isPrivate) throws IllegalValueException {
         this.isPrivate = isPrivate;
         block = block.trim();
-        if (!isValidPhone(block)) {
+        if (!isValidBlock(block)) {
             throw new IllegalValueException(MESSAGE_BLOCK_CONSTRAINTS);
         }
         this.value = block;
     }
 
     /**
-     * Checks if a given string is a valid person phone number.
+     * Checks if a given string is a valid person block number.
      */
-    public static boolean isValidPhone(String test) {
+    public static boolean isValidBlock(String test) {
         return test.matches(BLOCK_VALIDATION_REGEX);
     }
 
