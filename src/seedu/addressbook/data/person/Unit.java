@@ -11,7 +11,7 @@ public class Unit {
     public static final String EXAMPLE = "#12-345";
     public static final String MESSAGE_UNIT_CONSTRAINTS = 
     		"Person unit should be a '#' followed by 2 numeric strings separated by '-'";
-    public static final String UNIT_VALIDATION_REGEX = "#\\d+-\\d+";
+    public static final String UNIT_VALIDATION_REGEX = "#[\\d+]-[\\d+]";
 
     public final String value;
     private boolean isPrivate;
