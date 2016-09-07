@@ -64,7 +64,7 @@ public class Person implements ReadOnlyPerson {
     	for(Printable p : printables) {
     		finalString += p.getPrintableString() + ", ";
     	}
-    	return finalString.substring(0,finalString.length()-1);
+    	return finalString.substring(0,finalString.length()-2);
     }
 
     /**
